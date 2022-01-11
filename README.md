@@ -1,1 +1,1 @@
-# WFM-1L-DiffusApprox-PMMH
+# Estimating selection coefficients and testing their changes from ancient DNA data
