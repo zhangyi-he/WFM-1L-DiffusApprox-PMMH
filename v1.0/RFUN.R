@@ -58,12 +58,12 @@ simulateWFM <- function(sel_cof, dom_par, pop_siz, int_frq, evt_gen, int_gen, ls
     gen_frq_pth <- as.matrix(WFM$gen_frq_pth)
   } else {
     fts_mat <- calculateFitnessMat_arma(sel_cof[1], dom_par)
-    WFM <- simulateWFM_arma(fts_mat, pop_siz, int_frq, int_gen, evt_gen)
+    WFM <- simulateWFM_arma(fts_mat, pop_siz[1:(evt_gen - int_gen + 1)], int_frq, int_gen, evt_gen)
     mut_frq_pth_pre_evt <- as.vector(WFM$mut_frq_pth)
     gen_frq_pth_pre_evt <- as.matrix(WFM$gen_frq_pth)
 
     fts_mat <- calculateFitnessMat_arma(sel_cof[2], dom_par)
-    WFM <- simulateWFM_arma(fts_mat, pop_siz, mut_frq_pth_pre_evt[length(mut_frq_pth_pre_evt)], evt_gen, lst_gen)
+    WFM <- simulateWFM_arma(fts_mat, pop_siz[(evt_gen - int_gen + 1):(lst_gen - int_gen + 1)], tail(mut_frq_pth_pre_evt, n = 1), evt_gen, lst_gen)
     mut_frq_pth_pst_evt <- as.vector(WFM$mut_frq_pth)
     gen_frq_pth_pst_evt <- as.matrix(WFM$gen_frq_pth)
 
@@ -101,10 +101,10 @@ simulateWFD <- function(sel_cof, dom_par, pop_siz, ref_siz, int_frq, evt_gen, in
     mut_frq_pth <- simulateWFD_arma(sel_cof[2], dom_par, pop_siz, ref_siz, int_frq, int_gen, lst_gen, ptn_num)
     mut_frq_pth <- as.vector(mut_frq_pth)
   } else {
-    mut_frq_pth_pre_evt <- simulateWFD_arma(sel_cof[1], dom_par, pop_siz, ref_siz, int_frq, int_gen, evt_gen, ptn_num)
+    mut_frq_pth_pre_evt <- simulateWFD_arma(sel_cof[1], dom_par, pop_siz[1:(evt_gen - int_gen + 1)], ref_siz, int_frq, int_gen, evt_gen, ptn_num)
     mut_frq_pth_pre_evt <- as.vector(mut_frq_pth_pre_evt)
 
-    mut_frq_pth_pst_evt <- simulateWFD_arma(sel_cof[2], dom_par, pop_siz, ref_siz, tail(mut_frq_pth_pre_evt, n = 1), evt_gen, lst_gen, ptn_num)
+    mut_frq_pth_pst_evt <- simulateWFD_arma(sel_cof[2], dom_par, pop_siz[(evt_gen - int_gen + 1):(lst_gen - int_gen + 1)], ref_siz, tail(mut_frq_pth_pre_evt, n = 1), evt_gen, lst_gen, ptn_num)
     mut_frq_pth_pst_evt <- as.vector(mut_frq_pth_pst_evt)
 
     mut_frq_pth <- append(mut_frq_pth_pre_evt, mut_frq_pth_pst_evt[-1])
