@@ -11,4 +11,4 @@ Source code is implemented for an MCMC-based method for inferring temporally var
 
 [Code v1.4](https://github.com/zhangyi-he/WFM-1L-DiffusApprox-PMMH/tree/main/Code%20v1.4)/[Code v1.4.1](https://github.com/zhangyi-he/WFM-1L-DiffusApprox-PMMH/tree/main/Code%20v1.4.1) includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with genotype likelihoods as input, where the underlying frequency trajectory of the mutant allele in the population is jointly estiamted. Note that Code v1.4.1 provides a more computationally efficient version.
 
-[Data]{https://github.com/zhangyi-he/WFM-1L-DiffusApprox-PMMH/tree/main/Data} includes the ancient horse samples genotyped at the loci for coat colouration.
+[Data](https://github.com/zhangyi-he/WFM-1L-DiffusApprox-PMMH/tree/main/Data) includes the ancient horse samples genotyped at the loci for coat colouration.
