@@ -5,8 +5,8 @@ Code v1.0 includes the source code implemented for the case of constant natural 
 
 Code v1.1 includes the source code implemented for the case of constant natural selection and non-constant demographic histories with called genotypes as input.
 
-Code v1.2/Code v1.2.1 includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with called genotypes as input.
+Code v1.2/Code v1.2.1 includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with called genotypes as input. Note that Code v1.2.1 provides a version that no loss or fixation event occurred in the underlying population.
 
 Code v1.3 includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with called genotypes as input, where the underlying frequency trajectory of the mutant allele in the population is jointly estiamted.
 
-Code v1.4/Code v1.4.1 includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with genotype likelihoods as input, where the underlying frequency trajectory of the mutant allele in the population is jointly estiamted.
+Code v1.4/Code v1.4.1 includes the source code implemented for the case of non-constant natural selection and non-constant demographic histories with genotype likelihoods as input, where the underlying frequency trajectory of the mutant allele in the population is jointly estiamted. Note that Code v1.4.1 provides a more computationally efficient version.
