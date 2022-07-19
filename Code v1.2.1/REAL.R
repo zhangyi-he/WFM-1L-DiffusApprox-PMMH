@@ -28,7 +28,7 @@ library("plot3D")
 library("emdbook")
 
 # call R functions
-source("./Code v1.2.1/RFUN.R")
+source("./RFUN.R")
 
 ################################################################################
 
