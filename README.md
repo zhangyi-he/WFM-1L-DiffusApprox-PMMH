@@ -1,5 +1,5 @@
 # Estimating temporally variable selection intensity from ancient DNA data
-The source code is implemented for an MCMC-based method for inferring temporally variable selection from ancient DNA data (in the format of genotype likelihoods), and the preprint has been accepted by Molecular Biology and Evolution, available at https://doi.org/10.1093/molbev/msad008. Except for the PMMH procedure described in the manuscript, we also provide an adaptive version that improves the convergence of the chain.
+The source code is implemented for an MCMC-based method for inferring temporally variable selection from ancient DNA data (in the format of genotype likelihoods), and the manuscript has been accepted by Molecular Biology and Evolution, available at https://doi.org/10.1093/molbev/msad008. Except for the PMMH procedure described in the manuscript, we also provide an adaptive version that improves the convergence of the chain.
 
 [Code v1.0](https://github.com/zhangyi-he/WFM-1L-DiffusApprox-PMMH/tree/main/Code%20v1.0) includes the source code implemented for the case of constant natural selection and constant demographic histories with called genotypes as input.
 
